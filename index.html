@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="assets/favicon.ico" rel="shortcut icon" />
+  <link rel="stylesheet" href="css/owfont-regular.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>momentum</title>
+</head>
+<body class="body">
+  <header class="header">
+    <div class="player" id="audio">
+      <div class="player-controls">
+        <button class="play-prev player-icon"></button>
+        <button class="play player-icon"></button>
+        <button class="play-next player-icon"></button>
+      </div>
+      <ul class="play-list"></ul>
+    </div>
+    <div class="weather" id="weather">
+      <input type="text" class="city" placeholder="enter city" />
+      <i class="weather-icon owf"></i>
+      <div class="weather-error"></div>
+      <div class="description-container">
+        <span class="temperature"></span>
+        <span class="weather-description"></span>
+      </div>
+      <div class="wind"></div>
+      <div class="humidity"></div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="slider-icons">
+      <button class="slide-prev slider-icon"></button>
+      <button class="slide-next slider-icon"></button>
+    </div>
+    <time class="time" id="time"></time>
+    <date class="date" id="date"></date>
+    <div class="greeting-container" id="greeting">
+      <span class="greeting"></span>
+      <input type="text" class="name" placeholder="enter name here" />
+    </div>
+    <div class="settings-wrapper">
+      <h4 class="settings-title">Settings</h4>
+    <div class="settings hide">
+      <div class="language">
+        <p>Language:</p>
+        <Label>
+          <div class="lg-item"><input type="radio" name="lg" id="en" checked>En</div>
+        </Label>
+        <Label>
+          <div class="lg-item"><input type="radio" name="lg" id="ua" disabled>Ua</div>
+        </Label>
+      </div>
+        <div class="change-bg">
+          <p>Photo Source:</p>
+          <Label>
+            <div class="bg-item"><input type="radio" name="bg" id="github">GitHub</div>
+          </Label>
+          <Label>
+            <div class="bg-item"><input type="radio" name="bg" id="unsplash">Unsplash</div>
+          </Label>
+          <Label>
+            <div class="bg-item"><input type="radio" name="bg" id="flickr">Flickr</div>
+          </Label>
+        </div>
+        <div class="hide-elements">
+          <p>Hide Elements:</p>
+<div class="hide-items">
+  <div>
+          <Label>
+            <div class="hide-item"><input type="checkbox" name="time">Time</div>
+          </Label>
+          <Label>
+            <div class="hide-item"><input type="checkbox" name="date">Date</div>
+          </Label>
+          <Label>
+            <div class="hide-item"><input type="checkbox" name="greeting">Greeting</div>
+          </Label>
+        </div>
+<div>
+          <Label>
+            <div class="hide-item"><input type="checkbox" name="quote">Quote</div>
+          </Label>
+          <Label>
+            <div class="hide-item"><input type="checkbox" name="weather">Weather</div>
+          </Label>
+          <Label>
+            <div class="hide-item"><input type="checkbox" name="audio">Audio</div>
+          </Label>
+        </div>
+        <!-- <div>
+          <Label>
+            <div class="hide-item"><input type="checkbox" name="all">All</div>
+          </Label>
+          <Label>
+            <div class="hide-item"><input type="checkbox" name="blackout">BlackOut</div>
+          </Label>
+        </div> -->
+      </div>
+        </div>
+      
+    </div>
+  </div>
+    
+  </main>
+  <footer class="footer">
+<div class="quote-container" id="quote">
+    <button class="change-quote"></button>
+    <div>
+      <div class="quote"></div>
+      <div class="author"></div>
+    </div>
+  </div>
+  </footer>
+  <script type="module" src="js/script.js"></script>
+</body>
+</html>
