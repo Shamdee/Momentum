@@ -90,7 +90,7 @@ function getLocalStorage() {
   if (localStorage.getItem('city')) {
     city.value = localStorage.getItem('city')
   }else {
-    city.value = 'Minsk'
+    city.value = 'Kyiv'
   }
   getWeather()
   if (localStorage.getItem('mySettings')) {
